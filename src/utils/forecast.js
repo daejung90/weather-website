@@ -32,7 +32,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if (response.body.error){
             callback('Unable to provide forecast.', undefined)
         } else {
-            callback(undefined, 'It is currently ' + response.body.current.temperature + ' degrees out. It feels like ' + response.body.current.feelslike + ' degrees out.')
+            callback(undefined, 'It is currently ' + response.body.current.temperature + ' degrees out. It feels like ' + response.body.current.feelslike + ' degrees out. The preciptation is ' + response.body.current.precip + ' mm. ')
         }
     })
 
