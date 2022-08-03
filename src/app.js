@@ -31,6 +31,7 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About me',
+        message: 'This site was created by Daeyoung Jung. it uses data from mapbox.com and weatherstack.com.',
         name: 'Daeyoung Jung'
     })
 })
